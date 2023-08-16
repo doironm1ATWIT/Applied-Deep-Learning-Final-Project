@@ -21,4 +21,18 @@ The researchers discovered in their dataset that there were some new headlines t
 
 ## Implementation Details
 
+The paper's implementation:
+1. There were 20,000 samples in their study. 
+1. Each sentence was assessed separately and numerical features were extracted and tokenized individually.
+2. Then the sentences were encoded using BERT sentence embeddings. The step is performed individually on each sentence.
+3. After obtaining the BERT sentence embeddings, the sentence embeddings were fed into a neural network that consisted of parallel hidden layers. The output for each sentence is a vector of size 20.
+4. The text as a whole is also looked at. The BERT sentence embedding is then used for the whole text, not just sentence level, and were fed into the hidden layers of the Neural Network. The output is a vector of size 60.
+5. In the end, there are three sequential layers that make the model. The final layers combine the output of all the previous paths of hidden layers to predict the final output.
+
+
+
+My implentation:
+
+
+
 ## Comparison of Results
