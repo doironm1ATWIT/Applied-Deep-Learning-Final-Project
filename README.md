@@ -32,7 +32,12 @@ The paper's implementation:
 
 
 My implentation:
+In my implementation, I used a similar approach. A sample size of X amount due to limited RAM and GPU in Google Collab.
 
+1. The text data from the huor dataset was tokenized at sentence level similar to the paper's implementation of this. 
+2. The BERT embeddings model was utilized as well to createh the embeddings that will be utlilized in the parallel lines portion of the model.
+3. To create the paralell lines portion of the neural network, a dense layer was created for each of the sentences inputted, and then all the layers were then concatenated.
+4. A sequential model was defined for the final layers of the neural network. The concatenated layer is passed through the sequential layers, which creates the final model for the output. 
 
 
 ## Comparison of Results
