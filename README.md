@@ -33,7 +33,7 @@ The paper's implementation:
 
 
 My implentation:
-In my implementation, I used a similar approach. A sample size of 5000 due to limited RAM and GPU in Google Collab.
+In my implementation, I used a similar approach. A sample size of 1000 due to limited RAM and GPU in Google Collab.
 
 1. The text data from the humor dataset was tokenized at sentence level similar to the paper's implementation of this. 
 2. The BERT embeddings model was utilized as well to create the embeddings that will be utlilized in the parallel lines portion of the model.
