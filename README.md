@@ -25,8 +25,8 @@ The researchers discovered in their dataset that there were some new headlines t
 The paper's implementation:
 1. There were 20,000 samples in their study. 
 1. Each sentence was assessed separately and numerical features were extracted and tokenized individually.
-2. Then the sentences were encoded using BERT sentence embeddings. The step is performed individually on each sentence.
-3. After obtaining the BERT sentence embeddings, the sentence embeddings were fed into a neural network that consisted of parallel hidden layers. The output for each sentence is a vector of size 20.
+2. Then the sentences were encoded using BERT sentence embeddings. An embedding was created for each sentence.
+3. After obtaining the BERT sentence embeddings, the sentence embeddings were fed into a neural network that consisted of parallel hidden layers. 
 4. The text as a whole is also looked at. The BERT sentence embedding is then used for the whole text, not just sentence level, and were fed into the hidden layers of the Neural Network. The output is a vector of size 60.
 5. In the end, there are three sequential layers that make the model. The final layers combine the output of all the previous paths of hidden layers to predict the final output.
 
@@ -35,9 +35,9 @@ The paper's implementation:
 My implentation:
 In my implementation, I used a similar approach. A sample size of 5000 due to limited RAM and GPU in Google Collab.
 
-1. The text data from the huor dataset was tokenized at sentence level similar to the paper's implementation of this. 
-2. The BERT embeddings model was utilized as well to createh the embeddings that will be utlilized in the parallel lines portion of the model.
-3. To create the paralell lines portion of the neural network, a dense layer was created for each of the sentences inputted, and then all the layers were then concatenated.
+1. The text data from the humor dataset was tokenized at sentence level similar to the paper's implementation of this. 
+2. The BERT embeddings model was utilized as well to create the embeddings that will be utlilized in the parallel lines portion of the model.
+3. To create the parallel lines portion of the neural network, a dense layer was created for each of the sentences, and then all the layers were then concatenated.
 4. A sequential model was defined for the final layers of the neural network. The concatenated layer is passed through the sequential layers, which creates the final model for the output.
 
 
