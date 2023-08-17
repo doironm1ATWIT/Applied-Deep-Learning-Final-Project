@@ -45,7 +45,7 @@ In my implementation, I used a similar approach. A sample size of 1000 due to li
 
 ## Comparison of Results and Conclusions
 
-|                              | Test  Size  | Accuracy Score |
+|                              | Train  Size | Accuracy Score |
 | ---------------------------- | ----------- | -------------- |
 | My Results                   |  700        |  0.4767        |  *used a test train split of 30 percent
 | Papers Results               |  40,000     |  0.9820        |  *used a test train split of 20 percent
