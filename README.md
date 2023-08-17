@@ -45,9 +45,9 @@ In my implementation, I used a similar approach. A sample size of 1000 due to li
 
 ## Comparison of Results and Conclusions
 
-|                              | Train  Size | Accuracy Score |
+|                              | Test  Size | Accuracy Score |
 | ---------------------------- | ----------- | -------------- |
-| My Results                   |  700        |  0.4767        |  *used a test train split of 30 percent
+| My Results                   |  300        |  0.4767        |  *used a test train split of 30 percent
 | Papers Results               |  40,000     |  0.9820        |  *used a test train split of 20 percent
 
 Due to the neural network being computationally expensive, my implementation was limited to the sample size that could affectively run the model. It was very computationaly expensive due to running through each sentence, and creating a embedding for each sentence, and then concatenating those layers. This is a significantly smaller sample than what was used in the model from the paper, so this does explain that why the accuracy scores differ significantly. My implementation has some future work that could be done, like implementing the whole text portion of the neural network that the paper utilized. This could benefit the accuracy score of my implementation. In the future, when working with a neural network model it is definitely more beneficial to work on a virtual machine to run the models. 
